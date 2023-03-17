@@ -2,6 +2,8 @@ use std::io;
 
 mod datastructures;
 mod errorhandling;
+mod generics_traits;
+
 // Inline module
 mod loops {
     pub fn play_with(){
@@ -104,6 +106,9 @@ fn main() {
     println!("Error handling");
     errorhandling::unrecoverable_errors::play_with();
     errorhandling::recoverable_errors::play_with();
+
+    println!("Generic Types, Traits and Lifetimes");
+    generics_traits::generics::play_with();
 }
 // Implementing a guessing number game
 fn guess_number_game(){
