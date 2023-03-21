@@ -22,9 +22,6 @@ impl<T, U> Location<T,U> {
     }
 }
 
-
-
-
 fn create_structs(){
     let integer = Point { x: 5, y: 10 };
     let float = Point { x: 1.0, y: 4.0 };
@@ -33,8 +30,8 @@ fn create_structs(){
     let location_ponts = Location { lat: 10, long: 20.0 };
     println!("Location with integer and float coordinates: ({}, {})", location_ponts.lat, location_ponts.long);
     println!("Get lat: {} Get Long: {}", location_ponts.get_lat(), location_ponts.get_long());
-    let location_ponts2 = Location { lat: 10.0, long: "180.45" };
-    println!("Location with float and str coordinates: ({}, {})", location_ponts2.lat, location_ponts2.long);
+    let location_ponts2 = Location { lat: 100.0, long: 'z' };
+    println!("Location with float and char coordinates: ({}, {})", location_ponts2.lat, location_ponts2.long);
     let new_location = location_ponts.mixup(location_ponts2);
     println!("New location with integer and str coordinates: ({}, {})", new_location.lat, new_location.long);
 }
