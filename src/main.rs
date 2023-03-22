@@ -110,7 +110,7 @@ fn main() {
     println!("Generic Types, Traits and Lifetimes");
     generics_traits::generics::play_with();
     generics_traits::traits::play_with();
-    
+    generics_traits::lifetimes::play_with();
 }
 // Implementing a guessing number game
 fn guess_number_game(){
