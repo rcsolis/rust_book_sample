@@ -12,8 +12,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
         y
     }
 }
-
-
+// Lifetime annotations in struct definitions
 struct ImportantExcerpt<'a> {
     part: &'a str,
 }
