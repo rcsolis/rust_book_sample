@@ -3,6 +3,7 @@ use std::io;
 mod datastructures;
 mod errorhandling;
 mod generics_traits;
+mod iterators_closures;
 
 // Inline module
 mod loops {
@@ -111,6 +112,10 @@ fn main() {
     generics_traits::generics::play_with();
     generics_traits::traits::play_with();
     generics_traits::lifetimes::play_with();
+
+    println!("Iterators and Closures");
+    iterators_closures::closures::play_with();
+
 }
 // Implementing a guessing number game
 fn guess_number_game(){
