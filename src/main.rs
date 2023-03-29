@@ -115,6 +115,7 @@ fn main() {
 
     println!("Iterators and Closures");
     iterators_closures::closures::play_with();
+    iterators_closures::iterators::play_with();
 
 }
 // Implementing a guessing number game
